@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="shine_portals_compat"
+version="1.0.0"
+displayName="Shine + Immersive Portals (compat)"
+description="Faz o Shine e o Immersive Portals alterarem os shaders um depois do outro, em vez de brigarem pelo mesmo @Redirect."
+
+[[mixins]]
+config="shine_portals_compat.mixins.json"
+
+[[dependencies.shine_portals_compat]]
+modId="shine"
+type="required"
+versionRange="[2.0.2,)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.shine_portals_compat]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"
