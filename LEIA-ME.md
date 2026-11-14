@@ -15,3 +15,9 @@ Mod NeoForge 1.21.1 feito em 14/11/2026 para a instancia `1.21.1` do Prism na Sp
 **Compilar:** `./compilar.sh` (Java 21 + bibliotecas do proprio Prism, sem Gradle) e copiar `build/*.jar` para a pasta mods.
 
 **Atencao:** atualizar o Shine desfaz o passo 1 e o crash volta.
+
+## 1.1.0 (14/11/2026)
+Tambem protege o WorldEditCUI (`WorldEditCuiTickGuardMixin`): o CUI so cria o `controller` no `FMLClientSetupEvent`,
+mas escuta o tick do cliente desde o inicio. Com ~300 mods o tick vem antes do fim do setup e o jogo caia com
+`NullPointerException ... "this.controller" is null`. O tick do CUI e pulado ate o controller existir.
+O nome do mod ficou `shine_portals_compat` para nao trocar de identidade.

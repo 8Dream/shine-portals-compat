@@ -4,9 +4,9 @@ license="MIT"
 
 [[mods]]
 modId="shine_portals_compat"
-version="1.0.0"
+version="1.1.0"
 displayName="Shine + Immersive Portals (compat)"
-description="Faz o Shine e o Immersive Portals alterarem os shaders um depois do outro, em vez de brigarem pelo mesmo @Redirect."
+description="Correcoes da instancia 1.21.1: Shine e Immersive Portals alteram os shaders um depois do outro; WorldEditCUI espera o fim do setup antes de rodar no tick."
 
 [[mixins]]
 config="shine_portals_compat.mixins.json"

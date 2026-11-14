@@ -3,6 +3,11 @@
 	"minVersion": "0.8",
 	"package": "rafael.shineportals.mixin",
 	"compatibilityLevel": "JAVA_21",
-	"client": ["ProgramChainMixin"],
-	"injectors": { "defaultRequire": 1 }
+	"client": [
+		"ProgramChainMixin",
+		"WorldEditCuiTickGuardMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
 }
