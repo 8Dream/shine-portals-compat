@@ -4,19 +4,12 @@ license="MIT"
 
 [[mods]]
 modId="shine_portals_compat"
-version="1.1.0"
-displayName="Shine + Immersive Portals (compat)"
-description="Correcoes da instancia 1.21.1: Shine e Immersive Portals alteram os shaders um depois do outro; WorldEditCUI espera o fim do setup antes de rodar no tick."
+version="1.2.0"
+displayName="Correcoes da Spark (WorldEditCUI)"
+description="Correcoes da instancia 1.21.1 da Spark: o WorldEditCUI espera o fim do setup antes de rodar no tick. (A parte do Shine saiu em 14/11, junto com o Shine.)"
 
 [[mixins]]
 config="shine_portals_compat.mixins.json"
-
-[[dependencies.shine_portals_compat]]
-modId="shine"
-type="required"
-versionRange="[2.0.2,)"
-ordering="NONE"
-side="CLIENT"
 
 [[dependencies.shine_portals_compat]]
 modId="minecraft"
